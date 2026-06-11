@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ContactPage = () => {
+  const [data,setData]=useState({})
+
+  const handleChange=(e)=>{
+  const  name=e.target.name;
+  const value=e.target.value;
+  setData(val=>({...value,[name]:value}))
+  console.log(data)
+
+    
+
+  }
+  const handleSubmit=(ev)=>{
+    ev.preventDefault();
+    alert(name)
+  }
   return (
 <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-10">
 <div className="w-full max-w-4xl bg-white shadow-lg rounded-2xl overflow-hidden grid md:grid-cols-2">
@@ -16,7 +31,7 @@ const ContactPage = () => {
 </div>
 </div>
  <div className="p-10">
-<form className="space-y-6">
+<form className="space-y-6" onSubmit={handleSubmit}>
 <div>
 <label className="block text-gray-700 font-medium mb-2">
 Full Name
@@ -24,6 +39,9 @@ Full Name
 <input
 type="text"
 placeholder="Enter your name"
+name="firstName"
+value={data.firstName}
+onChange={handleChange}
 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
 />
 </div>
@@ -33,6 +51,9 @@ Email Address
 </label>
 <input
 type="email"
+name="email"
+value={data.email}
+onChange={handleChange}
 placeholder="Enter your email"
 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
 />
@@ -42,6 +63,9 @@ className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none
 <textarea
 rows="5"
 placeholder="Write your message..."
+name="textarea"
+value={data.textarea}
+onChange={handleChange}
 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
 ></textarea>
 </div>

@@ -1,8 +1,10 @@
 import React from "react";
+import User from "./User";
 
 const Home = () => {
   return (
     <>
+
 <section className="relative overflow-hidden bg-gradient-to-r from-pink-50 via-white to-rose-50 py-24">
   
 
@@ -80,76 +82,6 @@ const Home = () => {
     </div>
   </div>
 </section>
-<div className="wifull py-6 bg-white">
-  <div className="flex items-center gap-8 overflow-x-auto px-6 scroll-smooth no-scrollbar">
-    <div className="flex flex-col items-center min-w-[100px]">
-      <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
- <img
-  src="https://images.unsplash.com/photo-1612817288484-6f916006741a"
-  alt="Face Serum"
-  className="w-10  h-10 object-contain" />
-      </div>
-<p className="mt-2 text-sm text-gray-700">Hair Cream</p>
-    </div>
-
- <div className="flex flex-col items-center min-w-[100px]">
-      <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
- <img
-  src="https://images.unsplash.com/photo-1612817288484-6f916006741a"
-  alt="Face Serum"
-  className="w-10  h-10 object-contain" />
-      </div>
-<p className="mt-2 text-sm text-gray-700">Makeup Brushes</p>
-    </div>
-
-     <div className="flex flex-col items-center min-w-[100px]">
-      <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
- <img
-  src="https://images.unsplash.com/photo-1612817288484-6f916006741a"
-  alt="Face Serum"
-  className="w-10  h-10 object-contain" />
-      </div>
-<p className="mt-2 text-sm text-gray-700">Perfumes</p>
-    </div>
-
-     <div className="flex flex-col items-center min-w-[100px]">
-      <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
- <img
-  src="https://images.unsplash.com/photo-1612817288484-6f916006741a"
-  alt="Face Serum"
-  className="w-10  h-10 object-contain" />
-      </div>
-<p className="mt-2 text-sm text-gray-700">Skincare Cream</p>
-    </div>
-
-     <div className="flex flex-col items-center min-w-[100px]">
-      <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
- <img
-  src="https://images.unsplash.com/photo-1612817288484-6f916006741a"
-  alt="Face Serum"
-  className="w-10  h-10 object-contain" />
-      </div>
-<p className="mt-2 text-sm text-gray-700">Lipstick</p>
-    </div>
-
-     <div className="flex flex-col items-center min-w-[100px]">
-      <div className="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center">
- <img
-  src="https://images.unsplash.com/photo-1612817288484-6f916006741a"
-  alt="Face Serum"
-  className="w-10  h-10 object-contain" />
-      </div>
-<p className="mt-2 text-sm text-gray-700">Face Cream</p>
-    </div>
-  </div>
-
-
-
-<div className="flex justify-center mt-14 space-x-2">
-<span className=" w-2 h-2 bg-pink-500 rounded-full"></span>
-<span className="w-2 h-2 bg-gray-300 rounded-full"></span>
-</div>
-</div>
 
 
       <section className="bg-white py-20">
