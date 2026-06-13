@@ -4,77 +4,74 @@ import User from "./User";
 const Home = () => {
   return (
     <>
+<section className="relative overflow-hidden bg-gradient-to-r from-pink-50 via-white to-rose-50 py-16 md:py-20">
 
-<section className="relative overflow-hidden bg-gradient-to-r from-pink-50 via-white to-rose-50 py-24">
-  
 
-  <div className="absolute top-0 left-0 w-72 h-72 bg-pink-200 rounded-full blur-3xl opacity-30"></div>
-  <div className="absolute bottom-0 right-0 w-72 h-72 bg-rose-200 rounded-full blur-3xl opacity-30"></div>
+  <div className="absolute top-0 left-0 w-56 md:w-72 h-56 md:h-72 bg-pink-200 rounded-full blur-3xl opacity-30"></div>
+  <div className="absolute bottom-0 right-0 w-56 md:w-72 h-56 md:h-72 bg-rose-200 rounded-full blur-3xl opacity-30"></div>
 
-  <div className="relative max-w-7xl mx-auto px-6">
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
+  <div className="relative max-w-6xl mx-auto px-5">
+    <div className="grid md:grid-cols-2 gap-10 items-center">
 
-      <div>
-        <span className="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full font-semibold">
-        Premium Beauty Collection
+      <div className="text-center md:text-left">
+
+        <span className="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-xs md:text-sm font-semibold">
+          Premium Beauty Collection
         </span>
 
-        <h1 className="mt-6 text-5xl md:text-6xl font-extrabold leading-tight text-gray-900">
+        <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight text-gray-900">
           Reveal Your
           <span className="block text-pink-600">
             Natural Beauty
           </span>
         </h1>
 
-        <p className="mt-6 text-lg text-gray-600 max-w-lg leading-relaxed">
-          Experience luxurious skincare crafted with premium ingredients.
-          Nourish, protect and enhance your skin's natural glow with
-          products designed for modern beauty lovers.
+        <p className="mt-4 text-sm md:text-base text-gray-600 max-w-md mx-auto md:mx-0">
+          Luxurious skincare crafted with premium ingredients to nourish and enhance your natural glow.
         </p>
 
     
-        <div className="mt-8 flex flex-wrap gap-4">
-          <div className="bg-white px-4 py-3 rounded-xl shadow-sm">
-            🌿 Natural Ingredients
+        <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-2">
+          <div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
+            🌿 Natural
           </div>
-
-          <div className="bg-white px-4 py-3 rounded-xl shadow-sm">
-            🧴 Dermatologist Tested
+          <div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
+            🧴 Tested
           </div>
-
-          <div className="bg-white px-4 py-3 rounded-xl shadow-sm">
+          <div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
             💖 Cruelty Free
           </div>
         </div>
 
-      
-        <div className="mt-10 flex flex-wrap gap-4">
-          <button className="px-8 py-4 bg-pink-600 text-white rounded-full font-semibold shadow-lg hover:bg-pink-700 hover:scale-105 transition-all duration-300">
+ 
+        <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+          <button className="px-6 py-3 bg-pink-600 text-white rounded-full font-semibold hover:bg-pink-700 transition">
             Shop Now
           </button>
 
-          <button className="px-8 py-4 border-2 border-pink-600 text-pink-600 rounded-full font-semibold hover:bg-pink-50 transition-all duration-300">
-            Explore More
+          <button className="px-6 py-3 border border-pink-600 text-pink-600 rounded-full font-semibold hover:bg-pink-50 transition">
+            Explore
           </button>
         </div>
+
       </div>
 
+    
       <div className="relative flex justify-center">
-        
-        <div className="absolute -top-6 -left-6 w-full h-full bg-pink-300 rounded-[40px] rotate-6"></div>
 
-        <div className="relative bg-white p-4 rounded-[40px] shadow-2xl">
+        <div className="absolute -top-4 -left-4 w-full h-full bg-pink-300 rounded-3xl rotate-3"></div>
+
+        <div className="relative bg-white p-3 rounded-3xl shadow-2xl">
           <img
             src="https://images.unsplash.com/photo-1598528738936-c50861cc75a9?w=900"
             alt="Beauty Product"
-            className="w-full max-w-lg h-[550px] object-cover rounded-[30px]"
+            className="w-full max-w-sm md:max-w-md h-[320px] md:h-[420px] object-cover rounded-2xl"
           />
         </div>
 
-   
-        <div className="absolute bottom-8 -left-8 bg-white p-4 rounded-2xl shadow-xl">
-          <p className="text-sm text-gray-500">Trusted by</p>
-          <h4 className="font-bold text-xl">50K+ Customers</h4>
+        <div className="absolute bottom-4 -left-2 bg-white px-3 py-2 rounded-xl shadow text-xs md:text-sm">
+          <span className="text-gray-500">Trusted</span>
+          <p className="font-bold">50K+ Customers</p>
         </div>
 
       </div>
@@ -82,7 +79,6 @@ const Home = () => {
     </div>
   </div>
 </section>
-
 
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
