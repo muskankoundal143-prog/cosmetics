@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import User from "./User";
 
 const Home = () => {
+//   const[count,setCount]=useState(0)
+//   const[data,setData]=useState(0)
+//   useEffect(()=>{
+//     setTimeout(()=>{
+//       setCount(count)
+     
+//     },[data])
+
+//   })
+//   const handleClick=()=>{
+//   setData(data)
+// }
   return (
     <>
+    {/* <h1>{count}</h1>
+    <h2 >{data}</h2>
+    <button onClick={handleClick}>Inc</button> */}
 <section className="relative overflow-hidden bg-gradient-to-r from-pink-50 via-white to-rose-50 py-16 md:py-20">
 
 
