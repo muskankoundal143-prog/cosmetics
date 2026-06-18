@@ -5,44 +5,43 @@ const Product = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
       <div className="max-w-7xl mx-auto p-6">
-        
         <h1 className="text-4xl font-extrabold text-center mb-10 text-gray-800">
-           Our Products
+          Our Products
         </h1>
 
-     
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {products.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+              className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
+            
               <div className="overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-56 object-cover hover:scale-110 transition-transform duration-500"
+                  className="w-full h-36 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
             
-              <div className="p-5">
-                <h3 className="text-lg font-bold text-gray-800">
+              <div className="p-3">
+                <h3 className="text-sm font-semibold text-gray-800 truncate">
                   {item.name}
                 </h3>
 
-                <p className="text-2xl font-bold text-pink-600 mt-2">
+                <p className="text-lg font-bold text-pink-600 mt-1">
                   ₹{item.price}
                 </p>
 
                
-                <div className="mt-5 flex gap-2">
-                  <button className="flex-1 bg-gradient-to-r from-pink-500 to-pink-600 text-white py-2 rounded-xl font-semibold hover:opacity-90 transition">
-                    Add Cart
+                <div className="mt-3 flex gap-1.5">
+                  <button className="flex-1 bg-pink-500 text-white py-1.5 rounded-md text-xs font-medium hover:bg-pink-600 transition">
+                    Cart
                   </button>
 
-                  <button className="flex-1 bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-2 rounded-xl font-semibold hover:opacity-90 transition">
-                    Buy Now
+                  <button className="flex-1 bg-purple-600 text-white py-1.5 rounded-md text-xs font-medium hover:bg-purple-700 transition">
+                    Buy
                   </button>
                 </div>
               </div>
