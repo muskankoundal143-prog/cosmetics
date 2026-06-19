@@ -19,24 +19,24 @@ const Home = () => {
     {/* <h1>{count}</h1>
     <h2 >{data}</h2>
     <button onClick={handleClick}>Inc</button> */}
-<section className="relative overflow-hidden bg-gradient-to-r from-pink-50 via-white to-rose-50 py-16 md:py-20">
+<section className="relative overflow-hidden bg-gradient-to-r from-emerald-50 via-white to-teal-50 py-16 md:py-20">
 
+<div className="absolute top-0 left-0 w-56 md:w-72 h-56 md:h-72 bg-emerald-200 rounded-full blur-3xl opacity-30"></div>
 
-  <div className="absolute top-0 left-0 w-56 md:w-72 h-56 md:h-72 bg-pink-200 rounded-full blur-3xl opacity-30"></div>
-  <div className="absolute bottom-0 right-0 w-56 md:w-72 h-56 md:h-72 bg-rose-200 rounded-full blur-3xl opacity-30"></div>
+<div className="absolute bottom-0 right-0 w-56 md:w-72 h-56 md:h-72 bg-teal-200 rounded-full blur-3xl opacity-30"></div>
 
   <div className="relative max-w-6xl mx-auto px-5">
     <div className="grid md:grid-cols-2 gap-10 items-center">
 
       <div className="text-center md:text-left">
 
-        <span className="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-xs md:text-sm font-semibold">
+        <span className="inline-block px-4 py-2 bg-pink-50 text-emerald-600 rounded-full text-xs md:text-sm font-semibold">
           Premium Beauty Collection
         </span>
 
         <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight text-gray-900">
           Reveal Your
-          <span className="block text-pink-600">
+          <span className="block text-emerald-700">
             Natural Beauty
           </span>
         </h1>
@@ -60,11 +60,11 @@ const Home = () => {
 
  
         <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-          <button className="px-6 py-3 bg-pink-600 text-white rounded-full font-semibold hover:bg-pink-700 transition">
+          <button className="px-6 py-3 bg-emerald-600 text-white rounded-full font-semibold hover:bg-emerald-700 transition">
             Shop Now
           </button>
 
-          <button className="px-6 py-3 border border-pink-600 text-pink-600 rounded-full font-semibold hover:bg-pink-50 transition">
+          <button className="px-6 py-3 border border-emerald-600 text-emerald-600 rounded-full font-semibold hover:bg-pink-50 transition">
             Explore
           </button>
         </div>
@@ -74,7 +74,7 @@ const Home = () => {
     
       <div className="relative flex justify-center">
 
-        <div className="absolute -top-4 -left-4 w-full h-full bg-pink-300 rounded-3xl rotate-3"></div>
+        <div className="absolute -top-4 -left-4 w-full h-full bg-emerald-700 rounded-3xl rotate-3"></div>
 
         <div className="relative bg-white p-3 rounded-3xl shadow-2xl">
           <img
@@ -98,7 +98,7 @@ const Home = () => {
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-pink-600">
+            <h2 className="text-4xl font-bold text-emerald-700">
               Our Best Sellers
             </h2>
             <p className="text-gray-600 mt-4">
@@ -121,7 +121,7 @@ const Home = () => {
                 <p className="text-gray-600 mt-2">
                   Brightens skin and reduces dark spots naturally.
                 </p>
-                <button className="mt-4 bg-pink-600 text-white px-5 py-2 rounded-full hover:bg-pink-700">
+   <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
                   View Product
                 </button>
               </div>
@@ -140,7 +140,7 @@ const Home = () => {
                 <p className="text-gray-600 mt-2">
                   Deep nourishment for soft and glowing skin.
                 </p>
-                <button className="mt-4 bg-pink-600 text-white px-5 py-2 rounded-full hover:bg-pink-700">
+      <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
                   View Product
                 </button>
               </div>
@@ -160,7 +160,7 @@ const Home = () => {
                 <p className="text-gray-600 mt-2">
                   Cleanses impurities while maintaining moisture.
                 </p>
-                <button className="mt-4 bg-pink-600 text-white px-5 py-2 rounded-full hover:bg-pink-700">
+                <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
                   View Product
                 </button>
               </div>
@@ -172,7 +172,7 @@ const Home = () => {
   <div className="max-w-6xl mx-auto px-6">
     
     <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold text-pink-600">
+      <h2 className="text-4xl font-bold text-emerald-700">
         Why Choose Tiava?
       </h2>
       <p className="text-gray-600 mt-4">
@@ -228,7 +228,7 @@ const Home = () => {
 <section className="bg-pink-50 py-20">
   <div className="max-w-4xl mx-auto px-6 text-center">
 
-    <h2 className="text-4xl font-bold text-pink-600">
+    <h2 className="text-4xl font-bold text-emerald-700">
       Join Tiava Community
     </h2>
 
@@ -241,10 +241,10 @@ const Home = () => {
       <input
         type="email"
         placeholder="Enter your email"
-        className="w-full md:w-2/3 px-5 py-3 rounded-full border border-gray-300 focus:outline-none focus:border-pink-500"
+        className="w-full md:w-2/3 px-5 py-3 rounded-full border border-gray-300 focus:outline-none focus:border-emerald-600"
       />
 
-      <button className="bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition">
+      <button className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition">
         Subscribe
       </button>
 

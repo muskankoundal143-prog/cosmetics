@@ -44,8 +44,8 @@ const CategoryPage = () => {
             onClick={() => setSelected(cat)}
             className={`px-5 py-2 rounded-full border transition ${
               selected === cat
-                ? "bg-pink-600 text-white"
-                : "bg-white text-gray-700 hover:bg-pink-100"
+                ? "bg-emerald-700 text-white"
+                : "bg-white text-gray-700 hover:bg-emerald-100"
             }`}
           >
             {cat}
@@ -65,7 +65,7 @@ const CategoryPage = () => {
             <h2 className="text-xl font-semibold text-gray-800">
               {item.name}
             </h2>
-            <p className="text-pink-600 mt-2 text-sm">
+            <p className="text-emerald-700 mt-2 text-sm">
               {item.category}
             </p>
           </div>

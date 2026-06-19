@@ -30,17 +30,17 @@ const Product = () => {
                   {item.name}
                 </h3>
 
-                <p className="text-lg font-bold text-pink-600 mt-1">
+                <p className="text-lg font-bold text-emerald-700 mt-1">
                   ₹{item.price}
                 </p>
 
                
                 <div className="mt-3 flex gap-1.5">
-                  <button className="flex-1 bg-pink-500 text-white py-1.5 rounded-md text-xs font-medium hover:bg-pink-600 transition">
+                  <button className="flex-1 bg-emerald-700 text-white py-1.5 rounded-md text-xs font-medium hover:bg-emerald-800 transition">
                     Cart
                   </button>
 
-                  <button className="flex-1 bg-purple-600 text-white py-1.5 rounded-md text-xs font-medium hover:bg-purple-700 transition">
+                  <button className="flex-1 bg-teal-600 text-white py-1.5 rounded-md text-xs font-medium hover:bg-teal-700 transition">
                     Buy
                   </button>
                 </div>

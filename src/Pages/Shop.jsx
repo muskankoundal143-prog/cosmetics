@@ -18,7 +18,7 @@ const Shop = () => {
             >
           
               <div className="relative overflow-hidden">
-                <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full z-10">
+                <span className="absolute top-2 left-2 bg-emerald-600 text-white text-xs px-2 py-1 rounded-full z-10">
                   SALE
                 </span>
 
@@ -42,7 +42,7 @@ const Shop = () => {
                 </div>
 
                 <div className="flex items-center gap-2 mt-2">
-                  <p className="text-lg md:text-xl font-bold text-pink-600">
+                  <p className="text-lg md:text-xl font-bold text-emerald-700">
                     ₹{item.price}
                   </p>
 
@@ -51,11 +51,11 @@ const Shop = () => {
                   </span>
                 </div>
 <div className="mt-4 flex gap-2">
-  <button className="flex-1 bg-pink-100 text-pink-700 py-2 rounded-lg text-sm font-semibold hover:bg-pink-200 transition duration-300">
+<button className="flex-1 bg-emerald-100 text-emerald-800 py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 transition duration-300">
     Add Cart
   </button>
 
-  <button className="flex-1 bg-pink-600 text-white py-2 rounded-lg text-sm font-semibold hover:bg-pink-700 transition duration-300">
+  <button className="flex-1 bg-teal-600 text-white py-2 rounded-lg text-sm font-semibold hover:bg-teal-700 transition duration-300">
     Buy Now
   </button>
 </div>

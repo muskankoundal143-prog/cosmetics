@@ -19,7 +19,7 @@ const ContactPage = () => {
   return (
 <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-10">
 <div className="w-full max-w-4xl bg-white shadow-lg rounded-2xl overflow-hidden grid md:grid-cols-2">
-<div className="bg-pink-600 text-white p-10 flex flex-col justify-center">
+<div className="bg-emerald-700 text-white p-10 flex flex-col justify-center">
 <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
 <p className="text-lg mb-6">
  We'd love to hear from you. Send us a message and we’ll respond as soon as possible.
@@ -42,20 +42,21 @@ placeholder="Enter your name"
 name="firstName"
 value={data.firstName}
 onChange={handleChange}
-className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
+className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-700"
 />
 </div>
 <div>
 <label className="block text-gray-700 font-medium mb-2">
 Email Address
 </label>
+
 <input
 type="email"
 name="email"
 value={data.email}
 onChange={handleChange}
 placeholder="Enter your email"
-className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
+className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-700"
 />
 </div>
 <div>
@@ -66,12 +67,12 @@ placeholder="Write your message..."
 name="textarea"
 value={data.textarea}
 onChange={handleChange}
-className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
+className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-700"
 ></textarea>
 </div>
 <button
 type="submit"
-className="w-full bg-pink-600 text-white py-3 rounded-lg hover:bg-pink-700 transition duration-300"
+className="w-full bg-emerald-700 text-white py-3 rounded-lg hover:bg-emerald-800 transition duration-300"
 >
 Send Message
 </button>
