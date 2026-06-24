@@ -35,20 +35,20 @@ const Product = () => {
                 </p>
 
                
-                <div className="mt-3 flex gap-1.5">
-                  <button className="flex-1 bg-emerald-700 text-white py-1.5 rounded-md text-xs font-medium hover:bg-emerald-800 transition">
-                    Cart
-                  </button>
+  <div className="mt-4 flex gap-2">
+<button className="flex-1 bg-emerald-100 text-emerald-800 py-2 rounded-lg text-sm font-semibold hover:bg-emerald-600 transition duration-300">
+   Add Cart
+  </button>
 
-                  <button className="flex-1 bg-teal-600 text-white py-1.5 rounded-md text-xs font-medium hover:bg-teal-700 transition">
-                    Buy
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+  <button className="flex-1 bg-teal-600 text-white py-2 rounded-lg text-sm font-semibold hover:bg-teal-700 transition duration-300">
+    Buy Now
+   </button>
+   </div>
+    </div>
+    </div>
+     ))}
+    </div>
+    </div>
     </div>
   );
 };
