@@ -52,7 +52,7 @@ return ( <div className="bg-white shadow-md">
   </nav>
 
   {menuOpen && (
-    <nav className="md:hidden bg-pink-50 border-t">
+    <nav className="md:hidden bg-emerald-100 border-t">
       <ul className="flex flex-col items-center py-4 space-y-4 text-gray-700 font-medium">
 
         <li>
