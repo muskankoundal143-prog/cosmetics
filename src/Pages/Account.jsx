@@ -23,7 +23,7 @@ const Account = () => {
             </h2>
             <p className="text-gray-500 text-sm">tiava123@gmail.com</p>
 
-            <span className="inline-block mt-2 px-3 py-1 text-xs bg-emerald-100 text-emerald-700 rounded-full">
+    <span className="inline-block mt-2 px-3 py-1 text-xs bg-emerald-100 text-emerald-700 rounded-full">
               Premium Member
             </span>
           </div>
@@ -44,7 +44,7 @@ const Account = () => {
           </div>
 
           <div className="p-4 rounded-xl bg-gray-50 hover:bg-gray-100 cursor-pointer transition flex justify-between items-center">
-            <span className="font-medium text-gray-700">Settings</span>
+         <span className="font-medium text-gray-700">Settings</span>
        
           </div>
 
