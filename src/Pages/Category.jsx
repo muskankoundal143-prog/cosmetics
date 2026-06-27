@@ -31,7 +31,7 @@ const CategoryPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-rose-50 px-4 py-12">
 
-      {/* TITLE */}
+     
       <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-900">
         Shop by <span className="text-emerald-700">Category</span>
       </h1>
@@ -40,7 +40,7 @@ const CategoryPage = () => {
         Discover skincare & beauty products made for you ✨
       </p>
 
-      {/* CATEGORY BUTTONS */}
+     
       <div className="flex flex-wrap justify-center gap-3 mt-8">
 
         {categories.map((cat, i) => (
@@ -60,12 +60,12 @@ const CategoryPage = () => {
 
       </div>
 
-      {/* PRODUCT COUNT */}
+   
       <p className="text-center text-sm text-gray-500 mt-6">
         {filteredProducts.length} products found
       </p>
 
-      {/* PRODUCTS */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 mt-10 max-w-6xl mx-auto">
 
         {filteredProducts.length === 0 ? (
@@ -78,8 +78,7 @@ const CategoryPage = () => {
               key={item.id}
               className="group bg-white/70 backdrop-blur-md border border-white shadow-md rounded-2xl p-6 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
-
-              {/* ICON CIRCLE */}
+     
               <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center group-hover:scale-110 transition">
                 ✨
               </div>
