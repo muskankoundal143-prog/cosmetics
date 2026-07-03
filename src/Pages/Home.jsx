@@ -2,19 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import User from "./User";
 
 const Home = () => {
-  const[data,setData]=useState([])
-  useEffect(()=>{
-    fetch("https://jsonplaceholder.typicode.com/users")
-    .then((res)=>res.json())
-    .then((data)=>setData(data))
-          .catch((error) => console.log(error));
-
-  },[])
+  
+  
   return ( 
     <>
-    {data.map((e)=>(
-      <p key={e.id}>{e.name}{e.email}</p>
-    ))}
+  
  
       
       <section className="relative overflow-hidden bg-gradient-to-r from-emerald-50 via-white to-teal-50 py-16 md:py-20">

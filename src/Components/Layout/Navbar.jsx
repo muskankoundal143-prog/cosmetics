@@ -14,7 +14,7 @@ return ( <div className="bg-white shadow-md">
 
 <h1 className="text-3xl md:text-5xl font-bold text-white tracking-[4px]">
   TIAVA BEAUTY
-</h1>
+</h1>                            
 
 <div className="w-24 h-1 bg-amber-400 mx-auto mt-3 rounded-full"></div>
 
