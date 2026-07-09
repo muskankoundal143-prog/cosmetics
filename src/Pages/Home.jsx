@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import User from "./User";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   
   
@@ -9,79 +9,78 @@ const Home = () => {
   
  
       
-      <section className="relative overflow-hidden bg-gradient-to-r from-emerald-50 via-white to-teal-50 py-16 md:py-20">
+ <section className="relative overflow-hidden bg-gradient-to-r from-emerald-50 via-white to-teal-50 py-16 md:py-20">
 
-        <div className="absolute top-0 left-0 w-56 md:w-72 h-56 md:h-72 bg-emerald-200 rounded-full blur-3xl opacity-30"></div>
+ <div className="absolute top-0 left-0 w-56 md:w-72 h-56 md:h-72 bg-emerald-200 rounded-full blur-3xl opacity-30"></div>
 
-        <div className="absolute bottom-0 right-0 w-56 md:w-72 h-56 md:h-72 bg-teal-200 rounded-full blur-3xl opacity-30"></div>
+ <div className="absolute bottom-0 right-0 w-56 md:w-72 h-56 md:h-72 bg-teal-200 rounded-full blur-3xl opacity-30"></div>
 
-        <div className="relative max-w-6xl mx-auto px-5">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+ <div className="relative max-w-6xl mx-auto px-5">
+<div className="grid md:grid-cols-2 gap-10 items-center">
 
-            <div className="text-center md:text-left">
+ <div className="text-center md:text-left">
 
-              <span className="inline-block px-4 py-2 bg-pink-50 text-emerald-600 rounded-full text-xs md:text-sm font-semibold">
-                Premium Beauty Collection
-              </span>
+  <span className="inline-block px-4 py-2 bg-pink-50 text-emerald-600 rounded-full text-xs md:text-sm font-semibold">
+   Premium Beauty Collection
+    </span>
 
-              <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight text-gray-900">
-                Reveal Your
-                <span className="block text-emerald-700">
-                  Natural Beauty
-                </span>
-              </h1>
+ <h1 className="mt-4 text-3xl md:text-5xl font-extrabold leading-tight text-gray-900">
+ Reveal Your
+  <span className="block text-emerald-700">
+   Natural Beauty
+   </span>
+    </h1>
 
-              <p className="mt-4 text-sm md:text-base text-gray-600 max-w-md mx-auto md:mx-0">
-                Luxurious skincare crafted with premium ingredients to nourish and enhance your natural glow.
-              </p>
-
-
-              <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-2">
-                <div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
-                   Natural
-                </div>
-                <div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
-                   Tested
-                </div>
-                <div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
-                   Cruelty Free
-                </div>
-              </div>
+   <p className="mt-4 text-sm md:text-base text-gray-600 max-w-md mx-auto md:mx-0">
+     Luxurious skincare crafted with premium ingredients to nourish and enhance your natural glow.
+    </p>
+  <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-2">
+  <div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
+  Natural
+ </div>
+ <div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
+Tested
+</div>
+<div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
+ Cruelty Free
+ </div>
+ </div>
 
 
-              <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-                <button className="px-6 py-3 bg-emerald-600 text-white rounded-full font-semibold hover:bg-emerald-700 transition">
-                  Shop Now
-                </button>
+<div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
 
-                <button className="px-6 py-3 border border-emerald-600 text-emerald-600 rounded-full font-semibold hover:bg-pink-50 transition">
-                  Explore
-                </button>
-              </div>
+  <Link to="/shop-page">
+    <button className="px-6 py-3 bg-emerald-600 text-white rounded-full font-semibold hover:bg-emerald-700 transition">
+      Shop Now
+    </button>
+  </Link>
 
-            </div>
+  <Link to="/category-pages">
+    <button className="px-6 py-3 border border-emerald-600 text-emerald-600 rounded-full font-semibold hover:bg-pink-50 transition">
+      Explore
+    </button>
+  </Link>
 
+</div>
+  </div>
 
-            <div className="relative flex justify-center">
+ <div className="relative flex justify-center">
+<div className="absolute -top-4 -left-4 w-full h-full bg-emerald-700 rounded-3xl rotate-3"></div>
 
-              <div className="absolute -top-4 -left-4 w-full h-full bg-emerald-700 rounded-3xl rotate-3"></div>
+  <div className="relative bg-white p-3 rounded-3xl shadow-2xl">
+  <img
+  src="https://images.unsplash.com/photo-1598528738936-c50861cc75a9?w=900"
+ alt="Beauty Product"
+ className="w-full max-w-sm md:max-w-md h-[320px] md:h-[420px] object-cover rounded-2xl"/>
+    </div>
+<div className="absolute bottom-4 -left-2 bg-white px-3 py-2 rounded-xl shadow text-xs md:text-sm">
+     <span className="text-gray-500">Trusted</span>
+       <p className="font-bold">50K+ Customers</p>
+ </div>
 
-              <div className="relative bg-white p-3 rounded-3xl shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1598528738936-c50861cc75a9?w=900"
-                  alt="Beauty Product"
-                  className="w-full max-w-sm md:max-w-md h-[320px] md:h-[420px] object-cover rounded-2xl"
-                />
-              </div>
+</div>
 
-              <div className="absolute bottom-4 -left-2 bg-white px-3 py-2 rounded-xl shadow text-xs md:text-sm">
-                <span className="text-gray-500">Trusted</span>
-                <p className="font-bold">50K+ Customers</p>
-              </div>
-
-            </div>
-
-          </div>
+</div>
         </div>
       </section>
 
@@ -111,9 +110,11 @@ const Home = () => {
                 <p className="text-gray-600 mt-2">
                   Brightens skin and reduces dark spots naturally.
                 </p>
-                <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
-                  View Product
-                </button>
+                <Link to="/product-detail/1">
+  <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
+    View Product
+  </button>
+</Link>
               </div>
             </div>
 
@@ -130,9 +131,11 @@ const Home = () => {
                 <p className="text-gray-600 mt-2">
                   Deep nourishment for soft and glowing skin.
                 </p>
-                <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
-                  View Product
-                </button>
+                <Link to="/product-detail/2">
+  <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
+    View Product
+  </button>
+</Link>
               </div>
             </div>
 
@@ -150,9 +153,11 @@ const Home = () => {
                 <p className="text-gray-600 mt-2">
                   Cleanses impurities while maintaining moisture.
                 </p>
-                <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
-                  View Product
-                </button>
+                <Link to="/product-detail/3">
+  <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
+    View Product
+  </button>
+</Link>
               </div>
             </div>
           </div>

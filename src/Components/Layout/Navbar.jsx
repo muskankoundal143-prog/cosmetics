@@ -47,7 +47,7 @@ return ( <div className="bg-white shadow-md">
       <li><Link className="hover:text-emerald-700" to="/category-pages">Category</Link></li>
       <li><Link className="hover:text-emerald-700" to="/contact-page">Contact</Link></li>
       <li><Link className="hover:text-emerald-700" to="/user-account">Account</Link></li>
-      <li><Link className="hover:text-emerald-700" to="/cart-checkout">Cart </Link></li>
+    
     </ul>
   </nav>
 
@@ -94,12 +94,6 @@ return ( <div className="bg-white shadow-md">
         <li>
           <Link to="/user-account" onClick={closeMenu}>
             Account
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/cart-checkout" onClick={closeMenu}>
-            Cart 
           </Link>
         </li>
 
