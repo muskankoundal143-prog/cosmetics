@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const categories = [
   "All",
   "Skincare",
@@ -90,10 +90,11 @@ const CategoryPage = () => {
               <p className="text-emerald-700 mt-2 text-sm font-medium">
                 {item.category}
               </p>
-
-              <button className="mt-4 text-sm text-white bg-emerald-700 px-5 py-2 rounded-full opacity-90 group-hover:opacity-100">
-                View Product
-              </button>
+<Link to={`/product-detail/${item.id}`}>
+  <button className="mt-4 text-sm text-white bg-emerald-700 px-5 py-2 rounded-full opacity-90 group-hover:opacity-100">
+    View Product
+  </button>
+</Link>
 
             </div>
           ))

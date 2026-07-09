@@ -163,94 +163,162 @@ Tested
           </div>
         </div>
       </section>
-      <section className="bg-pink-50 py-20">
-        <div className="max-w-6xl mx-auto px-6">
+     <section className="bg-gradient-to-b from-pink-50 via-white to-emerald-50 py-20">
+  <div className="max-w-6xl mx-auto px-6">
 
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-emerald-700">
-              Why Choose Tiava?
-            </h2>
-            <p className="text-gray-600 mt-4">
-              We combine nature, innovation, and luxury to bring out your best glow.
-            </p>
-          </div>
+    <div className="text-center mb-14">
+      <span className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold">
+        Why Tiava?
+      </span>
 
-          <div className="grid md:grid-cols-4 gap-8">
+      <h2 className="mt-4 text-4xl font-extrabold text-gray-900">
+        Beauty Inspired By Nature
+      </h2>
 
-            <div className="bg-white p-6 rounded-xl shadow text-center">
-        
-              <h3 className="text-xl font-semibold text-gray-800">
-                Natural Ingredients
-              </h3>
-              <p className="text-gray-600 mt-2">
-                Carefully selected ingredients that are gentle on your skin.
-              </p>
-            </div>
+      <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+        We combine natural ingredients, advanced skincare science and luxury
+        formulas to give your skin a healthy glow.
+      </p>
+    </div>
 
-            <div className="bg-white p-6 rounded-xl shadow text-center">
-     
-              <h3 className="text-xl font-semibold text-gray-800">
-                Premium Quality
-              </h3>
-              <p className="text-gray-600 mt-2">
-                Luxury skincare products crafted with excellence.
-              </p>
-            </div>
 
-            <div className="bg-white p-6 rounded-xl shadow text-center">
-          
-              <h3 className="text-xl font-semibold text-gray-800">
-                All Skin Types
-              </h3>
-              <p className="text-gray-600 mt-2">
-                Suitable for dry, oily, sensitive, and combination skin.
-              </p>
-            </div>
+    <div className="grid md:grid-cols-4 gap-8">
 
-            <div className="bg-white p-6 rounded-xl shadow text-center">
-      
-              <h3 className="text-xl font-semibold text-gray-800">
-                Customer Loved
-              </h3>
-              <p className="text-gray-600 mt-2">
-                Trusted by thousands for radiant and healthy skin.
-              </p>
-            </div>
-
-          </div>
+      <div className="bg-white p-7 rounded-3xl shadow-lg hover:-translate-y-2 transition text-center">
+        <div className="text-xl mb-4">
+          🌿
         </div>
-      </section>
-      <section className="bg-pink-50 py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
 
-          <h2 className="text-4xl font-bold text-emerald-700">
-            Join Tiava Community
-          </h2>
+        <h3 className="text-2xl font-bold text-gray-800">
+          Natural Formula
+        </h3>
 
-          <p className="text-gray-600 mt-4">
-            Get skincare tips, beauty secrets & exclusive offers directly in your inbox.
-          </p>
+        <p className="text-gray-600 mt-3">
+          Carefully selected botanical ingredients that love your skin.
+        </p>
+      </div>
 
-          <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
 
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full md:w-2/3 px-5 py-3 rounded-full border border-gray-300 focus:outline-none focus:border-emerald-600"
-            />
-
-            <button className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition">
-              Subscribe
-            </button>
-
-          </div>
-
-          <p className="text-gray-500 text-sm mt-4">
-            No spam, only beauty updates 💖
-          </p>
-
+      <div className="bg-white p-7 rounded-3xl shadow-lg hover:-translate-y-2 transition text-center">
+        <div className="text-xl mb-4">
+          ✨
         </div>
-      </section>
+
+        <h3 className="text-2xl font-bold text-gray-800">
+          Premium Quality
+        </h3>
+
+        <p className="text-gray-600 mt-3">
+          Luxury skincare created with high-quality ingredients.
+        </p>
+      </div>
+
+
+      <div className="bg-white p-7 rounded-3xl shadow-lg hover:-translate-y-2 transition text-center">
+        <div className="text-xl mb-4">
+          💧
+        </div>
+
+        <h3 className="text-2xl font-bold text-gray-800">
+          Every Skin Type
+        </h3>
+
+        <p className="text-gray-600 mt-3">
+          Products designed for dry, oily and sensitive skin.
+        </p>
+      </div>
+
+
+      <div className="bg-white p-7 rounded-3xl shadow-lg hover:-translate-y-2 transition text-center">
+        <div className="text-xl mb-4">
+          💖
+        </div>
+
+        <h3 className="text-2xl font-bold text-gray-800">
+          Loved By Customers
+        </h3>
+
+        <p className="text-gray-600 mt-3">
+          Thousands of customers trust our beauty solutions.
+        </p>
+      </div>
+
+    </div>
+
+
+
+    <div className="mt-16 bg-emerald-700 rounded-3xl p-8 text-white grid md:grid-cols-3 gap-8 text-center">
+
+      <div>
+        <h3 className="text-4xl font-bold">
+          50K+
+        </h3>
+        <p className="mt-2 text-emerald-100">
+          Happy Customers
+        </p>
+      </div>
+
+
+      <div>
+        <h3 className="text-4xl font-bold">
+          100%
+        </h3>
+        <p className="mt-2 text-emerald-100">
+          Quality Tested
+        </p>
+      </div>
+
+
+      <div>
+        <h3 className="text-4xl font-bold">
+          24/7
+        </h3>
+        <p className="mt-2 text-emerald-100">
+          Customer Support
+        </p>
+      </div>
+
+    </div>
+
+
+
+
+    <div className="mt-16 bg-white rounded-3xl shadow-xl p-8 md:p-12 text-center">
+
+      <h2 className="text-3xl font-bold text-emerald-700">
+        Join Tiava Beauty Club 
+      </h2>
+
+      <p className="text-gray-600 mt-3">
+        Get skincare tips, beauty secrets and exclusive offers.
+      </p>
+
+
+      <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+
+        <input
+          type="email"
+          placeholder="Enter your email"
+          className="px-6 py-4 rounded-full border w-full md:w-96 focus:outline-none focus:border-emerald-600"
+        />
+
+
+        <button className="px-8 py-4 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition">
+          Subscribe
+        </button>
+
+      </div>
+
+
+      <p className="text-sm text-gray-500 mt-4">
+        No spam. Only beauty updates ✨
+      </p>
+
+    </div>
+
+
+  </div>
+</section>
     </>
   );
 }

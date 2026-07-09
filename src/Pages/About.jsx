@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-pink-50 via-white to-rose-50">
@@ -73,13 +73,18 @@ const About = () => {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
 
-            <button className="bg-emerald-700 text-white px-6 py-3 rounded-full hover:bg-emerald-800 transition">
-              Explore Products
-            </button>
-
-            <button className="border border-emerald-700 text-emerald-700  px-6 py-3 rounded-full hover:bg-pink-50 transition">
-              Learn More
-            </button>
+            <Link
+  to="/shop-page"
+  className="bg-emerald-700 text-white px-6 py-3 rounded-full hover:bg-emerald-800 transition text-center"
+>
+  Explore Products
+</Link>
+<Link
+  to="/contact-page"
+  className="border border-emerald-700 text-emerald-700 px-6 py-3 rounded-full hover:bg-pink-50 transition text-center"
+>
+  Learn More
+</Link>
 
           </div>
 
