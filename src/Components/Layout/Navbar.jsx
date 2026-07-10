@@ -9,24 +9,16 @@ setMenuOpen(false);
 };
 
 return ( <div className="bg-white shadow-md">
- <div className="bg-gradient-to-r from-stone-700 via-emerald-700 to-teal-700 shadow-xl">
-  <div className="text-center">
-
-<h1 className="text-xl md:text-3xl font-bold text-white tracking-[3px]">
-  TIAVA BEAUTY
-</h1>                            
-
-<div className="w-24 h-1 bg-amber-400 mx-auto mt-2 rounded-full"></div>
-
-<p className="mt-2 text-emerald-100 text-sm md:text-base tracking-widest uppercase">
-  Natural • Luxury • Skincare
-</p>
-
-
-  </div>
+ <div className="bg-gradient-to-r from-stone-800 via-emerald-700 to-teal-700 shadow-lg py-3">
+ <div className="text-center">
+ <h1 className=" text-lg md:text-2xl font-bold text-white tracking-[3px]"> TIAVA BEAUTY</h1>
+<div className=" w-20 h-1 bg-amber-400 mx-auto mt-1 rounded-full">
+    </div>
+ <p className=" mt-1 text-emerald-100 text-[11px] md:text-sm tracking-widest uppercase">
+   Natural • Luxury • Skincare</p>
 </div>
 
-
+</div>
  
   <div className="md:hidden flex justify-end px-4 py-3">
     <button
