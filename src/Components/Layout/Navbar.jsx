@@ -9,16 +9,16 @@ setMenuOpen(false);
 };
 
 return ( <div className="bg-white shadow-md">
- <div className="bg-gradient-to-r from-stone-700 via-emerald-700 to-teal-700 py-6 shadow-xl">
+ <div className="bg-gradient-to-r from-stone-700 via-emerald-700 to-teal-700 shadow-xl">
   <div className="text-center">
 
-<h1 className="text-3xl md:text-5xl font-bold text-white tracking-[4px]">
+<h1 className="text-xl md:text-3xl font-bold text-white tracking-[3px]">
   TIAVA BEAUTY
 </h1>                            
 
-<div className="w-24 h-1 bg-amber-400 mx-auto mt-3 rounded-full"></div>
+<div className="w-24 h-1 bg-amber-400 mx-auto mt-2 rounded-full"></div>
 
-<p className="mt-3 text-emerald-100 text-sm md:text-base tracking-widest uppercase">
+<p className="mt-2 text-emerald-100 text-sm md:text-base tracking-widest uppercase">
   Natural • Luxury • Skincare
 </p>
 

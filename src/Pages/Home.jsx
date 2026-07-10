@@ -30,10 +30,15 @@ const Home = () => {
    Natural Beauty
    </span>
     </h1>
-
-   <p className="mt-4 text-sm md:text-base text-gray-600 max-w-md mx-auto md:mx-0">
-     Luxurious skincare crafted with premium ingredients to nourish and enhance your natural glow.
-    </p>
+<p className="mt-4 text-sm md:text-base text-gray-600 max-w-md mx-auto md:mx-0 leading-7">
+  Luxurious skincare crafted with premium ingredients to nourish, hydrate and
+  enhance your natural glow. At Tiava Beauty, we combine the power of nature
+  with advanced skincare innovation to create gentle yet effective formulas
+  that care for every skin type. Our carefully designed products help restore
+  moisture, improve skin texture and bring out a healthy, radiant complexion.
+  Experience a premium beauty ritual made to boost your confidence and reveal
+  your skin's true beauty every day.
+</p>
   <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-2">
   <div className="bg-white px-3 py-2 rounded-lg shadow text-xs md:text-sm">
   Natural
@@ -90,9 +95,14 @@ Tested
             <h2 className="text-4xl font-bold text-emerald-700">
               Our Best Sellers
             </h2>
-            <p className="text-gray-600 mt-4">
-              Discover our most loved skincare and beauty essentials.
-            </p>
+           <p className="text-gray-600 mt-4 max-w-2xl mx-auto leading-7">
+  Discover our most loved skincare and beauty essentials, carefully crafted
+  with premium ingredients to nourish, hydrate and enhance your natural glow.
+  From brightening serums to deeply moisturizing formulas, each product is
+  designed to support healthy-looking skin and create a luxurious everyday
+  skincare experience. Explore the favorites trusted by our customers and
+  bring the beauty of nature into your daily routine.
+</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -110,7 +120,7 @@ Tested
                 <p className="text-gray-600 mt-2">
                   Brightens skin and reduces dark spots naturally.
                 </p>
-                <Link to="/product-detail/1">
+                <Link to="/product-detail">
   <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
     View Product
   </button>
@@ -131,7 +141,7 @@ Tested
                 <p className="text-gray-600 mt-2">
                   Deep nourishment for soft and glowing skin.
                 </p>
-                <Link to="/product-detail/2">
+                <Link to="/product-detail">
   <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
     View Product
   </button>
@@ -153,7 +163,7 @@ Tested
                 <p className="text-gray-600 mt-2">
                   Cleanses impurities while maintaining moisture.
                 </p>
-                <Link to="/product-detail/3">
+                <Link to="/product-detail">
   <button className="mt-4 bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800">
     View Product
   </button>
@@ -319,6 +329,144 @@ Tested
 
   </div>
 </section>
+
+<footer className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 text-white pt-16 pb-6">
+
+  <div className="max-w-6xl mx-auto px-6">
+
+    <div className="grid md:grid-cols-4 gap-10">
+
+      <div>
+
+        <h2 className="text-3xl font-bold text-emerald-300">
+          Tiava Beauty
+        </h2>
+
+        <p className="mt-4 text-emerald-100 leading-7 text-sm">
+          Tiava Beauty brings luxurious skincare inspired by nature and
+          powered by modern beauty science. Our premium formulas are created
+          with carefully selected ingredients to nourish your skin, enhance
+          your natural glow and make every beauty routine feel special.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h3 className="text-xl font-semibold mb-5 text-white">
+          Quick Links
+        </h3>
+
+
+        <ul className="space-y-3 text-emerald-100">
+
+          <li>
+            <Link 
+            to="/"
+            className="hover:text-teal-300 transition">
+              Home
+            </Link>
+          </li>
+
+
+          <li>
+            <Link 
+            to="/shop-page"
+            className="hover:text-teal-300 transition">
+              Shop
+            </Link>
+          </li>
+
+
+          <li>
+            <Link 
+            to="/about"
+            className="hover:text-teal-300 transition">
+              About Us
+            </Link>
+          </li>
+
+
+          <li>
+            <Link 
+            to="/contact-page"
+            className="hover:text-teal-300 transition">
+              Contact
+            </Link>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h3 className="text-xl font-semibold mb-5 text-white">
+          Customer Care
+        </h3>
+
+
+        <ul className="space-y-3 text-emerald-100">
+
+          <li className="hover:text-teal-300 cursor-pointer transition">
+            Skin Care Guide
+          </li>
+
+          <li className="hover:text-teal-300 cursor-pointer transition">
+            Shipping & Delivery
+          </li>
+
+          <li className="hover:text-teal-300 cursor-pointer transition">
+            Return Policy
+          </li>
+
+          <li className="hover:text-teal-300 cursor-pointer transition">
+            Privacy Policy
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h3 className="text-xl font-semibold mb-5 text-white">
+          Beauty Club
+        </h3>
+
+
+        <p className="text-emerald-100 text-sm leading-6">
+          Subscribe for skincare tips, beauty secrets, new product launches
+          and exclusive offers from Tiava Beauty.
+        </p>
+
+<div className="mt-5 flex">
+ <input type="email"  placeholder="Your email" className="w-full px-4 py-3 rounded-l-full text-gray-900 outline-none"/>
+<button className="bg-teal-600 px-5 rounded-r-full hover:bg-teal-700 transition font-semibold">
+ Join</button>
+  </div>
+   </div>
+ </div>
+
+<div className="border-t border-emerald-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-emerald-100" >
+ <p>© 2026 Tiava Beauty. All Rights Reserved.</p>
+
+ <div className="flex gap-5">
+<span className="hover:text-teal-300 cursor-pointer transition">
+  Instagram
+</span>
+
+ <span className="hover:text-teal-300 cursor-pointer transition">
+   Facebook
+ </span>
+
+ <span className="hover:text-teal-300 cursor-pointer transition">
+  Pinterest
+</span>
+ </div>
+</div> 
+</div>
+</footer>
     </>
   );
 }

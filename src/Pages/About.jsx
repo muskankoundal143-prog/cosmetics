@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const About = () => {
   return (
+    <>
     <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-pink-50 via-white to-rose-50">
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
@@ -17,11 +18,14 @@ const About = () => {
             Beauty that
             <span className="text-emerald-700"> Feels Natural</span>
           </h2>
-
-          <p className="text-gray-600 mt-4 text-sm md:text-base leading-6 md:leading-7">
-            We believe real beauty comes from care, not coverage. Our skincare
-            is designed to enhance your natural glow using safe ingredients.
-          </p>
+<p className="text-gray-600 mt-4 text-sm md:text-base leading-7">
+  We carefully select premium ingredients known for their nourishing and
+  revitalizing properties. From botanical extracts and natural antioxidants to
+  advanced skincare solutions, every ingredient is chosen with purpose to
+  support healthier, smoother and more radiant-looking skin. Our products are
+  designed to deliver hydration, improve skin texture and help restore your
+  natural glow with consistent use.
+</p>
 
           <p className="text-gray-600 mt-3 text-sm md:text-base leading-6 md:leading-7">
             Lightweight, non-toxic formulas suitable for all skin types.
@@ -112,7 +116,155 @@ const About = () => {
 
       </div>
     </section>
+ 
+<footer className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 text-white pt-16 pb-6">
+
+  <div className="max-w-6xl mx-auto px-6">
+
+    <div className="grid md:grid-cols-4 gap-10">
+
+
+   
+
+      <div>
+
+        <h2 className="text-3xl font-bold text-emerald-200">
+          Tiava Beauty
+        </h2>
+
+        <p className="mt-4 text-emerald-100 leading-7 text-sm">
+          Tiava Beauty brings luxurious skincare inspired by nature and
+          powered by modern beauty science. Our premium formulas are created
+          with carefully selected ingredients to nourish your skin, enhance
+          your natural glow and make every beauty routine feel special.
+        </p>
+
+      </div>
+
+
+
+
+
+      <div>
+
+        <h3 className="text-xl font-semibold mb-5 text-white">
+          Quick Links
+        </h3>
+
+
+        <ul className="space-y-3 text-emerald-100">
+
+          <li>
+            <Link 
+            to="/"
+            className="hover:text-teal-300 transition">
+              Home
+            </Link>
+          </li>
+
+
+          <li>
+            <Link 
+            to="/shop-page"
+            className="hover:text-teal-300 transition">
+              Shop
+            </Link>
+          </li>
+
+
+          <li>
+            <Link 
+            to="/about"
+            className="hover:text-teal-300 transition">
+              About Us
+            </Link>
+          </li>
+
+
+          <li>
+            <Link 
+            to="/contact-page"
+            className="hover:text-teal-300 transition">
+              Contact
+            </Link>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h3 className="text-xl font-semibold mb-5 text-white">
+          Customer Care
+        </h3>
+
+
+        <ul className="space-y-3 text-emerald-100">
+
+          <li className="hover:text-teal-300 cursor-pointer transition">
+            Skin Care Guide
+          </li>
+
+          <li className="hover:text-teal-300 cursor-pointer transition">
+            Shipping & Delivery
+          </li>
+
+          <li className="hover:text-teal-300 cursor-pointer transition">
+            Return Policy
+          </li>
+
+          <li className="hover:text-teal-300 cursor-pointer transition">
+            Privacy Policy
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h3 className="text-xl font-semibold mb-5 text-white">
+          Beauty Club
+        </h3>
+
+
+        <p className="text-emerald-100 text-sm leading-6">
+          Subscribe for skincare tips, beauty secrets, new product launches
+          and exclusive offers from Tiava Beauty.
+        </p>
+
+
+
+        <div className="mt-5 flex">
+
+          <input
+          type="email"  placeholder="Your email" className="w-full px-4 py-3 rounded-l-full text-gray-800
+          outline-none"/>
+ <button className="bg-teal-600 px-5 rounded-r-full hover:bg-teal-700 transition font-semibold ">
+            Join</button>
+
+</div>
+  </div>
+   </div>
+
+<div className="border-t border-emerald-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-emerald-100">
+<p>© 2026 Tiava Beauty. All Rights Reserved.</p>
+      <div className="flex gap-5">
+  <span className="hover:text-teal-300 cursor-pointer transition"> Instagram
+        </span>
+<span className="hover:text-teal-300 cursor-pointer transition">  Facebook
+        </span>
+
+<span className="hover:text-teal-300 cursor-pointer transition"> Pinterest
+     </span>
+  </div>
+    </div>
+  </div>
+  </footer>
+  </>
   );
+
 };
 
 export default About;
