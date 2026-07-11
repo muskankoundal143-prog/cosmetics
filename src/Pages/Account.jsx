@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Account = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-teal-50 p-6 flex items-center justify-center">
@@ -30,12 +30,14 @@ const Account = () => {
 
         </div>
 
-   
+  
         <div className="mt-8 space-y-3">
 
           <div className="p-4 rounded-xl bg-emerald-50 hover:bg-emerald-100 cursor-pointer transition flex justify-between items-center">
+            
+   <Link to="./Order">
             <span className="font-medium text-gray-700">My Orders</span>
-          
+           </Link>
           </div>
 
           <div className="p-4 rounded-xl bg-teal-50 hover:bg-teal-100 cursor-pointer transition flex justify-between items-center">
