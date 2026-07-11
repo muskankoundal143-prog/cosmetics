@@ -6,7 +6,7 @@ const Shop = () => {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 py-8">
       <div className="max-w-7xl mx-auto px-4">
      
-        <h1 className="text-4xl font-extrabold text-center mb-10 text-gray-800">
+        <h1 className="text-2xl font-extrabold text-center mb-10 text-gray-800">
           Shop Now
         </h1>
 

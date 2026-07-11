@@ -9,7 +9,7 @@ import Contact from './Pages/Contact'
 import Account from './Pages/Account'
 import Product from './Pages/Product'
 
-
+import Orders from './Pages/Order'
 
 const App = () => {
   return (
