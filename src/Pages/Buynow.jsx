@@ -72,107 +72,28 @@ placeholder={item[2]} className=" w-full mt-2 p-3 rounded-xl border cursor-point
  className=" w-full mt-2 p-3 rounded-xl border cursor-pointer hover:border-emerald-500 transition"/>
  </div>
 
- <div className="
-              bg-gradient-to-r
-              from-emerald-50
-              to-teal-50
-              p-5
-              rounded-2xl
-        ">
+ <div className=" bg-gradient-to-r from-emerald-50 to-teal-50 p-5 rounded-2xl">
 
+ <h3 className=" text-xl font-bold mb-4">Payment Method 💳 </h3>
+{
+  ["Cash On Delivery",
+  "UPI Payment",
+  "Debit / Credit Card"]
+   .map((pay,index)=>(
 
-              <h3 className="
-              text-xl
-              font-bold
-              mb-4
-              ">
-                Payment Method 💳
-              </h3>
+ <label key={index}
+ className="flex gap-3 items-center bg-white p-4 rounded-xl mb-3 border cursor-pointer hover:border-emerald-500 transition">
+<input type="radio" name="payment"/>
+<span className="font-medium">{pay}</span>
+</label>
+  ))}
+</div>
 
-
-
-              {
-              ["Cash On Delivery",
-              "UPI Payment",
-              "Debit / Credit Card"]
-              .map((pay,index)=>(
-
-
-              <label
-
-              key={index}
-
-              className="
-              flex
-              gap-3
-              items-center
-              bg-white
-              p-4
-              rounded-xl
-              mb-3
-              border
-              cursor-pointer
-              hover:border-emerald-500
-              transition
-              ">
-
-                <input
-                type="radio"
-                name="payment"
-                />
-
-                <span className="font-medium">
-                  {pay}
-                </span>
-
-              </label>
-
-
-              ))}
-
-
-
-              </div>
-
-
-
-
-
-              <button
-
-              className="
-              w-full
-              bg-gradient-to-r
-              from-teal-600
-              to-emerald-600
-              text-white
-              py-4
-              rounded-2xl
-              font-bold
-              text-lg
-              shadow-xl
-              hover:scale-105
-              transition
-              "
-              >
-
-              🛍️ Place Order
-
-              </button>
-
-
-            </form>
-
-
-          </div>
-
-
-        )}
-
-
-      </div>
-
-
+ <button className=" w-full bg-gradient-to-r from-teal-600 to-emerald-600  text-white py-4 rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition">🛍️ Place Order</button>
+</form>
+ </div>
+         )}
+</div>
     </div>
   );
 };
