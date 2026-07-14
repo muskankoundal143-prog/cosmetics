@@ -1,7 +1,8 @@
 import React from "react";
 import products from "../Components/Data";
-
+import { useNavigate } from "react-router-dom";
 const Product = () => {
+  const navigate = useNavigate();
   return (
   <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
   <div className="max-w-7xl mx-auto p-6">
@@ -39,9 +40,12 @@ className="w-full h-36 object-cover hover:scale-105 transition-transform duratio
    Add Cart
   </button>
 
-  <button className="flex-1 bg-teal-600 text-white py-2 rounded-lg text-sm font-semibold hover:bg-teal-700 transition duration-300">
-    Buy Now
-   </button>
+<button
+  onClick={() => navigate(`/buy/${item.id}`)}
+  className="flex-1 bg-teal-600 text-white py-2 rounded-lg text-sm font-semibold hover:bg-teal-700 transition duration-300"
+>
+  Buy Now
+</button>
    </div>
     </div>
     </div>

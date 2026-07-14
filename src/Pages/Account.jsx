@@ -29,9 +29,8 @@ const Account = () => {
           </div>
 
         </div>
-
-  
-        <div className="mt-8 space-y-3">
+ 
+  <div className="mt-8 space-y-3">
 
           <div className="p-4 rounded-xl bg-emerald-50 hover:bg-emerald-100 cursor-pointer transition flex justify-between items-center">
             
