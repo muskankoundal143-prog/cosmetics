@@ -116,7 +116,89 @@ const About = () => {
 
       </div>
     </section>
- 
+ {/* Customer Reviews Section */}
+<section className="py-16 px-4 bg-gradient-to-br from-rose-50 via-white to-pink-50">
+
+  <div className="max-w-6xl mx-auto text-center">
+
+    <span className="text-emerald-700 font-semibold tracking-widest uppercase text-sm">
+      Customer Love
+    </span>
+
+    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-3">
+      Loved by Thousands of 
+      <span className="text-emerald-700"> Beauty Lovers</span>
+    </h2>
+
+    <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+      Real experiences from customers who made Tiava Beauty a part of their
+      everyday skincare routine.
+    </p>
+
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+
+
+      <div className="bg-white p-6 rounded-2xl shadow-lg">
+        <div className="text-yellow-400 text-xl">
+          ★★★★★
+        </div>
+
+        <p className="text-gray-600 mt-4 leading-7">
+          "My skin feels softer and more hydrated after using Tiava products.
+          The quality is amazing."
+        </p>
+
+        <h3 className="font-bold text-gray-900 mt-5">
+          — Ananya Sharma
+        </h3>
+      </div>
+
+
+
+      <div className="bg-white p-6 rounded-2xl shadow-lg">
+
+        <div className="text-yellow-400 text-xl">
+          ★★★★★
+        </div>
+
+        <p className="text-gray-600 mt-4 leading-7">
+          "Beautiful packaging and gentle formulas. Perfect for my daily
+          skincare routine."
+        </p>
+
+        <h3 className="font-bold text-gray-900 mt-5">
+          — Priya Mehta
+        </h3>
+
+      </div>
+
+
+
+      <div className="bg-white p-6 rounded-2xl shadow-lg">
+
+        <div className="text-yellow-400 text-xl">
+          ★★★★★
+        </div>
+
+        <p className="text-gray-600 mt-4 leading-7">
+          "I love the natural feel of these products. My skin looks fresh
+          and glowing."
+        </p>
+
+        <h3 className="font-bold text-gray-900 mt-5">
+          — Riya Kapoor
+        </h3>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
 <footer className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 text-white pt-16 pb-6">
 
   <div className="max-w-6xl mx-auto px-6">
