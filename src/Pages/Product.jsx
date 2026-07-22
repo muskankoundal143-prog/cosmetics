@@ -8,121 +8,63 @@ const navigate = useNavigate();
 
 return (
 
-<div className="min-h-screen bg-[#faf7f5]">
+<div className="min-h-screen bg-[#fcf8f7]">
 
 
-{/* Unique Top Section */}
+<div className="max-w-7xl mx-auto px-6 pt-10 pb-6">
 
-<div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8 items-center">
+<div className="text-center">
 
-
-<div className="md:col-span-1">
-
-<p className="text-emerald-700 uppercase tracking-[4px] text-xs">
-Tiava Collection
+<p className="text-emerald-700 text-xs tracking-[5px] uppercase">
+Tiava Beauty
 </p>
 
-<h1 className="text-4xl font-bold text-gray-900 mt-4 leading-tight">
-Discover Your
-<br/>
-Perfect Skin
+
+<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3">
+Luxury Skin Care
+<span className="text-emerald-700"> Collection</span>
 </h1>
 
 
-<p className="text-gray-500 mt-4 text-sm leading-6">
-Luxury skincare crafted with natural ingredients
-for a healthy and radiant glow.
+<p className="text-gray-500 mt-3 max-w-xl mx-auto">
+Discover premium skincare products crafted with natural ingredients
+for healthy glowing skin.
 </p>
 
 
-<button className="mt-6 bg-emerald-700 text-white px-7 py-3 rounded-full">
-Explore Beauty
-</button>
-
-
-</div>
-
-
-
-<div className="md:col-span-2">
-
-<div className="grid grid-cols-2 gap-4">
-
-
-<div className="bg-pink-100 rounded-3xl h-44 flex items-center justify-center">
-
-<span className="text-5xl">
-🌸
-</span>
-
-</div>
-
-
-<div className="bg-emerald-100 rounded-3xl h-44 flex items-center justify-center">
-
-<span className="text-5xl">
-✨
-</span>
-
-</div>
-
-
 </div>
 
 </div>
+<div className="max-w-7xl mx-auto px-6 pb-16">
 
 
-</div>
-
-
-
-
-
-{/* Products */}
-
-<div className="max-w-7xl mx-auto px-6 pb-12">
-
-
-<h2 className="text-2xl font-bold mb-6">
-Trending Beauty Picks
-</h2>
-
-
-
-<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
 
 
 {
-products.map((item,index)=>(
+products.map((item)=>(
 
 
 <div
 key={item.id}
-className={`
-bg-white rounded-[28px] overflow-hidden shadow-sm hover:shadow-xl transition group
-${index===0 ? "md:translate-y-8":""}
-`}
+className="group bg-white rounded-[25px] overflow-hidden shadow-sm hover:shadow-2xl transition duration-500"
 >
 
-
-<div className="relative bg-gray-100">
-
+<div className="relative overflow-hidden bg-pink-50">
 
 <img
 src={item.image}
 alt={item.name}
-className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
+className="w-full h-52 object-cover group-hover:scale-110 transition duration-700"
 />
 
 
-
-<div className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs shadow">
+<span className="absolute top-3 left-3 bg-emerald-700 text-white text-xs px-3 py-1 rounded-full">
 Best Seller
-</div>
+</span>
 
 
-
-<button className="absolute right-3 top-3 bg-white w-9 h-9 rounded-full shadow">
+<button className="absolute top-3 right-3 bg-white w-9 h-9 rounded-full shadow hover:text-red-500">
 ♡
 </button>
 
@@ -132,24 +74,30 @@ Best Seller
 
 
 
+
 <div className="p-4">
 
 
-<h3 className="font-semibold text-gray-800 truncate">
+<p className="text-xs text-gray-400">
+Premium Skincare
+</p>
+
+
+
+<h3 className="font-semibold text-gray-800 mt-1 truncate">
 {item.name}
 </h3>
 
 
 
-<div className="flex justify-between items-center mt-3">
-
-<p className="text-lg font-bold text-emerald-700">
-₹{item.price}
-</p>
-
+<div className="flex items-center gap-1 mt-2">
 
 <span className="text-yellow-400 text-sm">
 ★★★★★
+</span>
+
+<span className="text-xs text-gray-400">
+(4.9)
 </span>
 
 </div>
@@ -157,25 +105,46 @@ Best Seller
 
 
 
-<div className="flex gap-2 mt-4">
+<div className="flex items-center gap-2 mt-3">
 
 
-<button className="flex-1 border border-emerald-700 text-emerald-700 rounded-full py-2 text-sm">
+<h2 className="text-xl font-bold text-emerald-700">
+₹{item.price}
+</h2>
+
+
+<span className="text-sm text-gray-400 line-through">
+₹{item.price+300}
+</span>
+
+
+</div>
+
+
+
+
+
+<div className="flex gap-2 mt-5">
+
+
+<button
+className="flex-1 border border-emerald-700 text-emerald-700 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 hover:text-white transition"
+>
 Cart
 </button>
 
 
 
+
 <button
 onClick={()=>navigate(`/buy/${item.id}`)}
-className="flex-1 bg-emerald-700 text-white rounded-full py-2 text-sm"
+className="flex-1 bg-emerald-700 text-white py-2 rounded-full text-sm font-semibold hover:bg-emerald-800 transition"
 >
-Buy
+Buy Now
 </button>
 
 
 </div>
-
 
 
 </div>
@@ -196,11 +165,53 @@ Buy
 
 
 
+<div className="bg-white py-8">
+
+<div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 text-center px-6">
+
+
+<div>
+🌿
+<p className="font-semibold mt-2">
+Natural
+</p>
+</div>
+
+
+<div>
+✨
+<p className="font-semibold mt-2">
+Premium
+</p>
+</div>
+
+
+<div>
+🚚
+<p className="font-semibold mt-2">
+Fast Delivery
+</p>
+</div>
+
+
+<div>
+💚
+<p className="font-semibold mt-2">
+Cruelty Free
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+
 
 </div>
 
 )
 
-}
+};
 
 export default Product;
