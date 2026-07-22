@@ -11,7 +11,7 @@ return (
 <div className="min-h-screen bg-[#fcf8f7]">
 
 
-<div className="max-w-7xl mx-auto px-6 pt-10 pb-6">
+<div className="max-w-5xl mx-auto px-6 pt-10 pb-6">
 
 <div className="text-center">
 
@@ -72,9 +72,6 @@ Best Seller
 </div>
 
 
-
-
-
 <div className="p-4">
 
 
@@ -87,8 +84,6 @@ Premium Skincare
 <h3 className="font-semibold text-gray-800 mt-1 truncate">
 {item.name}
 </h3>
-
-
 
 <div className="flex items-center gap-1 mt-2">
 
@@ -121,9 +116,6 @@ Premium Skincare
 </div>
 
 
-
-
-
 <div className="flex gap-2 mt-5">
 
 
@@ -132,8 +124,6 @@ className="flex-1 border border-emerald-700 text-emerald-700 py-2 rounded-full t
 >
 Cart
 </button>
-
-
 
 
 <button
@@ -148,8 +138,6 @@ Buy Now
 
 
 </div>
-
-
 
 </div>
 
